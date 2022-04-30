@@ -6,8 +6,9 @@ on:
     tags: ['*']
   workflow_dispatch:
 
-name: pkgdown
-
+jobs:
+  pkgdown:
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
@@ -27,7 +28,6 @@ name: pkgdown
             pkgdown
             animation
             baseballr
-            cfbfastR
             chessR
             fastRhockey
             ggimage
@@ -39,6 +39,7 @@ name: pkgdown
             sf
             sportyR
             tictoc
+            tidyverse
             toRvik
             wehoop
             zoo
