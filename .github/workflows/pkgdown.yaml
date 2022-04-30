@@ -8,11 +8,9 @@ on:
 
 name: pkgdown
 
-jobs:
-  pkgdown:
-    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
     steps:
       - uses: actions/checkout@v2
 
@@ -21,10 +19,29 @@ jobs:
       - uses: r-lib/actions/setup-r@v1
         with:
           use-public-rspm: true
+          r-version: 4.1.2
 
       - uses: r-lib/actions/setup-r-dependencies@v1
         with:
-          extra-packages: pkgdown
+          extra-packages: |
+            pkgdown
+            animation
+            baseballr
+            cfbfastR
+            chessR
+            fastRhockey
+            ggimage
+            hoopR
+            knitr
+            pacman
+            ragg
+            rsconnect
+            sf
+            sportyR
+            tictoc
+            toRvik
+            wehoop
+            zoo
           needs: website
 
       - name: Deploy package
