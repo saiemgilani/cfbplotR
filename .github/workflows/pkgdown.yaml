@@ -29,6 +29,7 @@ jobs:
             pkgdown
             animation
             baseballr
+            cfbfastR 
             chessR
             fastRhockey
             ggimage
