@@ -6,6 +6,7 @@ on:
     tags: ['*']
   workflow_dispatch:
 
+name: pkgdown
 jobs:
   pkgdown:
     runs-on: ubuntu-latest
