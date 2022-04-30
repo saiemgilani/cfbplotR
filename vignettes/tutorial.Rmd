@@ -30,6 +30,7 @@ library(dplyr)
 library(ggplot2)
 library(gt)
 library(forcats)
+library(tidyr)
 ```
 
 This first chunk of code will pull the play-by-play data from the first week of the 2021 season using the `cfbfastR` data repo and create the advanced metrics like EPA that we will be plotting (this will take a second). We'll also pull in the general team info so we can filter down to just teams in a power 5 conference.
