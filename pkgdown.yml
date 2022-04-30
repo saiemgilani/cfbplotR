@@ -1,0 +1,10 @@
+pandoc: 2.14.0.3
+pkgdown: 2.0.2
+pkgdown_sha: ~
+articles:
+  tutorial: tutorial.html
+last_built: 2022-04-30T20:04Z
+urls:
+  reference: https://cfbplotr.sportsdataverse.org/reference
+  article: https://cfbplotr.sportsdataverse.org/articles
+
