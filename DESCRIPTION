@@ -13,12 +13,15 @@ Authors@R:
            email = "13jaredlee@gmail.com")
      )
 Description: A set of functions to visualize College Football analysis in 'ggplot2'.
-URL: https://kazink36.github.io/cfbplotR, https://github.com/Kazink36/cfbplotR
+URL: https://kazink36.github.io/cfbplotR,
+    https://github.com/Kazink36/cfbplotR,
+    http://cfbplotr.sportsdataverse.org/
 BugReports: https://github.com/Kazink36/cfbplotR/issues
 Depends: 
     R (>= 3.5.0)
 Imports: 
     cli (>= 3.0.0),
+    cfbfastR,
     ggplot2 (>= 3.3.0),
     grid,
     gridtext (> 0.1.4),
